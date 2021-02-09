@@ -28,6 +28,7 @@ export const create = async (req, res) => {
       {
         likes: 0,
         tagIDs: [],
+        description: "",
         commentIDs: [],
       },
       req.body,
@@ -37,7 +38,7 @@ export const create = async (req, res) => {
   await new Promise((result) => {
     fs.rename(
       req.file.path,
-      path.resolve(`../storage/photo-${newPhoto._id}.png`),
+      path.resolve(`${path.dirname(req.file.path)}/photo-${newPhoto._id}.png`),
       result,
     );
   });

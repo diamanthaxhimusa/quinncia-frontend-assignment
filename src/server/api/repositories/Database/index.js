@@ -22,6 +22,7 @@ const schemas = {
   photo: {
     _id: true,
     name: true,
+    description: true,
     likes: true,
     tagIDs: true,
     commentIDs: true,
@@ -31,6 +32,7 @@ const schemas = {
   comment: {
     _id: true,
     content: true,
+    person: true,
     parentID: true,
     created_at: true,
     updated_at: true,
