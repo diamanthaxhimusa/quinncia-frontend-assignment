@@ -26,7 +26,7 @@ You are free to use any library for the assignment. We appreciate your time and 
 To start off:
 1. Clone the repo
 2. Run `npm run start:dev`
-3. The backend is available at `http://localhost:3000/api` (base URL)
+3. The backend is available at `http://localhost:3000/api` (base api URL)
 4. The frontend is available at `http://localhost:3000/`
 
 
